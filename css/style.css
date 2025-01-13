@@ -1,0 +1,301 @@
+/*inicializar*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header, main, footer{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*encabezado*/
+header{
+    background-image: url(../imagenes/sembradora.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+    
+}
+.icono{
+    display: inline-block;
+}
+.logo{
+    background-image: url(../imagenes/logo-rural.avif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.logo img:hover{
+   border: 1px solid green;
+}
+header h1{
+    
+    text-align: center;
+    color: azure;
+    font-weight: bolder;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    background-color: rgba(169, 169, 169, 0.415);
+    clear: both;
+    
+}
+/*menu*/ 
+
+
+/*main*/
+main{background-color: rgb(208, 218, 208);}
+#main-principal{
+    background-color: rgb(208, 218, 208);
+    padding: 2% 5%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+main h2{
+    text-align: center;
+    font-size: 2.5em;
+    padding-top: 20px;
+    text-shadow: 3px 3px 5px grey;
+} 
+
+.video-novedad iframe{
+    width: 90%;
+    height: 25vh;
+    
+}
+/*pie de pagina*/
+footer{
+    background-color: black;
+   
+
+}
+footer ul{
+    list-style: none;
+    width: 40%;
+    padding: 0;
+    margin:0 auto;
+}
+footer ul li{
+   
+    width: 20%;
+  padding: 10px 17px;  
+}
+footer ul li a{
+    text-decoration: none;
+    color: azure;
+    
+}
+footer ul li img{
+    width: 30px;
+}
+ /*pagina nosotros*/
+ .contenedor-carousel{
+    width: 70%;
+    margin: 5% auto;
+ }
+ .contenedor-carousel img{
+    height: 200px;
+ }
+ #mision-vision section p{
+    padding: 10px 10%;
+    background-color: rgba(240, 255, 255, 0.408);
+ }
+ .contenedor-mision-imagenes{
+    display:flex;
+    justify-content: space-around;
+    padding-bottom: 5px;
+ }
+ .contenedor-mision-imagenes img{
+    width: 300px;
+    display:block;
+ }
+ .contenedor-mision-imagenes .ocultar-imagen{
+    display:none;
+ }
+ /*pagina productos*/
+#main-productos .contenedor{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: start;
+    justify-content: space-between;
+    align-content: space-evenly;
+    gap:20px;
+    margin: 1%;
+}
+
+ .contenedor .producto{
+     display:flex;
+     flex-direction: column; 
+    background-color: rgb(247, 250, 249);
+    align-items: center;   
+    align-content: space-around;
+    padding: 5px;
+    border-radius: 2%;
+ }
+ .producto img{
+    width: 50%;
+    height: 150px;
+ }
+ /*pagina drones*/
+ #drones{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+    align-content: space-around;
+ }
+ .dron-descripcion{
+    width: 80%;
+    background-color: rgb(247, 250, 249);
+    margin: 2% auto;
+    padding: 2%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+    align-content: space-around;
+    border-radius: 2%;
+ }
+ .dron-descripcion img{
+    width: 80%;
+    display: block;
+ }
+ .dron-descripcion .resaltar-titulo{
+    width: 70%;
+    font-weight: bolder;
+    font-size: x-large;
+    padding-left: 2%;
+    vertical-align: middle;
+ }
+ .dron-descripcion .resaltar-titulo span{
+    font-size: medium;
+    display:block;
+ }
+ .dron-descripcion .descripcion{
+    width: 90%;
+    
+    padding-left: 5%;
+ }
+ /*pagina contacto*/
+ #main-contacto{
+    display: flex;
+    flex-direction: column;
+ }
+ .contacto{
+   
+    margin-top: 0;
+ }
+.contacto form{
+    margin: 0;
+    padding: 5%;
+}
+ input{
+    display: block;
+    width: 40%;
+    margin-bottom: 10px;
+ }
+ textarea{
+    width: 80%;
+ }
+/*
+@media 
+    
+}*/
+/* Media query para tabletas */
+@media (min-width: 600px) {
+    body {
+        font-size: 18px;
+        padding: 20px;
+    }
+    header{
+        background-position: center;
+        height: 40vh;
+    }
+    header h1{
+        font-size: 80px;
+    }
+    .video-novedad iframe{
+               height: 40vh;
+            }
+    footer ul li{
+        display: inline-block;
+        margin-left: 40px;
+    }
+    .contenedor-carousel img{
+        height: 400px;
+     }
+     .contenedor-mision-imagenes .ocultar-imagen{
+        display:block;
+     }
+      .dron-descripcion{
+       flex-direction: column; 
+    }
+    .dron-descripcion{
+        flex-direction: row; 
+        align-items: center;   
+        align-content: space-around;
+     }
+     .dron-descripcion img{
+       width: 30%;
+     }
+     .dron-descripcion .resaltar-titulo{
+        width: 10%;
+     }
+
+     .dron-descripcion .descripcion{
+        width: 50%;
+     }
+}
+
+/* Media query para computadoras de escritorio */
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px;
+        padding: 30px;
+    }
+    header{
+       height: 50vh;
+    }
+    header h1{
+        font-size: 120px;
+
+    }
+    .video-novedad iframe{
+        height: 60vh;
+     }
+     /*menu*/
+     .navbar{
+        width:70%;
+    }
+    .navbar .nav-item{
+        width: 100%;
+    }
+    .navbar .nav-item .nav-link{
+   
+        color: azure;
+        background-color: rgb(25, 71, 25);
+        text-align: center;
+        padding: 10px 25px;
+    }
+    .navbar .nav-item .nav-link:hover{
+        color: rgb(32, 37, 37);
+        background-color: rgb(91, 172, 91);
+        border: 1px solid rgb(62, 127, 62);
+    }
+    #main-contacto{
+        flex-direction: row;
+        justify-content: last baseline;
+        align-items:flex-start;
+    }
+    #main-contacto .contacto{
+        flex-grow: 1;
+    }
+    #main-contacto iframe{
+        width: 600px;
+    }
+}
