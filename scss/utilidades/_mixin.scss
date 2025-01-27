@@ -32,3 +32,17 @@
     width: $width;
     height: $heigth;
 }
+@mixin form-color{
+    border-color:#5b42f3 ;       
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    background-color: rgb(5, 6, 45);
+}
+
+@mixin sombra{
+    box-shadow:#131210 0 15px 30px -5px;
+}
+
+@mixin resalto-producto{
+    box-shadow:#7a6843 0 15px 30px -5px;
+    border: $color-titulo;
+}

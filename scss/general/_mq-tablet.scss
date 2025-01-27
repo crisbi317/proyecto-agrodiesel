@@ -10,7 +10,7 @@
         padding: 20px;
         header{
             background-position: center;
-            height: 40vh;
+            height: 50vh;
             h1{
                 font-size: 80px;
             }
@@ -25,7 +25,7 @@
                 }
             p{
                 padding: 20px;
-                font-size: 2rem;
+                font-size:1.52rem;
             }
             }
         
@@ -63,20 +63,22 @@
                 img{
                     @include size-w-h(100%,auto);
                 }
+                p{
+                    color:$color-principal;
+                }
             }
         }
         /*pagina drones*/
         #drones{
             .dron-descripcion{
-                flex-direction: row;
-                img{
-                    width: 30%; 
-                }
+              
                 .resaltar-titulo{
-                    width: 10%;
+                    text-align: center;
                 }
                 .descripcion{
-                    width: 50%;
+                   
+                    font-size: 1rem;
+                   
                 }
              }
         }

@@ -9,12 +9,13 @@
 }
 
 body {
-  background-color: black;
+  background-color: #FBF6E9;
 }
 body header, body main, body footer {
   width: 95%;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: #131210 0 15px 30px -5px;
 }
 
 /*import home*/
@@ -36,13 +37,14 @@ header .logo {
   width: 80px;
   height: 80px;
   border-radius: 50%;
+  box-shadow: #131210 0 15px 30px -5px;
 }
 header .logo:hover {
-  border: 1px solid green;
+  border: 1px solid #118B50;
 }
 header h1 {
   text-align: center;
-  color: azure;
+  color: #FBF6E9;
   font-weight: bolder;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 60px;
@@ -50,16 +52,25 @@ header h1 {
   background-color: rgba(169, 169, 169, 0.415);
   clear: both;
 }
+header nav:hover {
+  box-shadow: #131210 0 15px 30px -5px;
+  border-radius: 2%;
+}
 
 /*estilos main*/
 main {
-  background-color: rgb(208, 218, 208);
+  background: rgb(93, 185, 150);
+  background: radial-gradient(circle, rgb(93, 185, 150) 0%, rgb(93, 185, 178) 100%);
 }
 main h2 {
   text-align: center;
-  font-size: 2.5em;
-  padding-top: 20px;
+  font-size: 3rem;
+  padding: 20px;
   text-shadow: 3px 3px 5px grey;
+  color: #FBF6E9;
+}
+main .video-novedad {
+  box-shadow: #131210 0 15px 30px -5px;
 }
 main .video-novedad iframe {
   width: 90%;
@@ -67,7 +78,8 @@ main .video-novedad iframe {
 }
 main p {
   padding: 2%;
-  text-justify: distribute;
+  text-align: justify;
+  color: #FBF6E9;
 }
 
 #main-principal {
@@ -75,11 +87,12 @@ main p {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding: 5%;
 }
 
 /*estilos footer*/
 footer {
-  background-color: rgb(22, 21, 21);
+  background-color: #131210;
 }
 footer ul {
   list-style: none;
@@ -93,25 +106,37 @@ footer ul li {
 }
 footer ul li a {
   text-decoration: none;
-  color: azure;
+  color: #FBF6E9;
 }
 footer ul li img {
   width: 30px;
+}
+footer .flecha-subir {
+  display: block;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 40px;
 }
 
 /*import pages*/
 /*paleta de colores*/
 /* estilos pagina nosotros*/
+#mision-vision section {
+  background-color: #118B50;
+  padding: 3%;
+}
 #mision-vision section p {
   padding: 10px 10%;
-  background-color: rgba(240, 255, 255, 0.408);
+  color: #FBF6E9;
 }
 #mision-vision section .contenedor-carousel {
   width: 70%;
   margin: 5% auto;
+  box-shadow: #131210 0 15px 30px -5px;
 }
 #mision-vision section .contenedor-carousel img {
-  height: 200px;
+  height: 40vh;
 }
 #mision-vision section .contenedor-mision-imagenes {
   display: flex;
@@ -123,14 +148,18 @@ footer ul li img {
 #mision-vision section .contenedor-mision-imagenes img {
   width: 300px;
   display: block;
+  box-shadow: #131210 0 15px 30px -5px;
 }
 #mision-vision section .contenedor-mision-imagenes .ocultar-imagen {
   display: none;
 }
+#mision-vision .mision {
+  background-color: #5DB996;
+}
 
 /**estilos página productos*/
 #main-productos .contenedor {
-  margin: 1%;
+  padding: 3%;
 }
 #main-productos .contenedor .producto {
   display: flex;
@@ -140,10 +169,24 @@ footer ul li img {
   padding: 5px;
   border-radius: 2%;
   background-color: rgb(247, 250, 249);
+  box-shadow: #131210 0 15px 30px -5px;
 }
 #main-productos .contenedor .producto img {
-  width: 50%;
+  width: 90%;
   height: 150px;
+}
+#main-productos .contenedor .producto p {
+  font-size: 1rem;
+}
+#main-productos .contenedor .producto .producto-name {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+#main-productos .contenedor .producto:hover {
+  box-shadow: #7a6843 0 15px 30px -5px;
+  border: #FBF6E9;
 }
 
 /*estiloas pagina drones*/
@@ -153,9 +196,16 @@ footer ul li img {
   align-items: center;
   align-content: space-around;
 }
+#drones .dron-descripcion {
+  background-color: rgb(247, 250, 249);
+  box-shadow: #131210 0 15px 30px -5px;
+  margin: 2%;
+  border-radius: 2%;
+}
 #drones .dron-descripcion img {
   width: 80%;
   display: block;
+  margin-top: 2%;
 }
 #drones .dron-descripcion .resaltar-titulo {
   width: 70%;
@@ -163,6 +213,7 @@ footer ul li img {
   font-size: x-large;
   padding-left: 2%;
   vertical-align: middle;
+  color: #131210;
 }
 #drones .dron-descripcion .resaltar-titulo span {
   font-size: medium;
@@ -171,6 +222,11 @@ footer ul li img {
 #drones .dron-descripcion .descripcion {
   width: 90%;
   padding-left: 5%;
+  color: #131210;
+}
+#drones .dron-descripcion:hover {
+  box-shadow: #7a6843 0 15px 30px -5px;
+  border: #FBF6E9;
 }
 
 /*estilos pagina contacto*/
@@ -178,18 +234,32 @@ footer ul li img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+}
+#main-contacto h2 {
+  color: #118B50;
 }
 #main-contacto .contacto {
-  margin-top: 0;
+  width: 90%;
+  margin: 5%;
+  padding: 3%;
+  background-color: rgb(247, 250, 249);
+  border-radius: 2%;
+  box-shadow: #131210 0 15px 30px -5px;
 }
 #main-contacto .contacto form {
   margin: 0;
-  padding: 5%;
+  padding: 30px;
   /* From Uiverse.io by cssbuttons-io */
+}
+#main-contacto .contacto form input, #main-contacto .contacto form textarea {
+  border-color: #5b42f3;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  background-color: rgb(5, 6, 45);
 }
 #main-contacto .contacto form input {
   display: block;
-  width: 40%;
+  width: 80%;
   margin-bottom: 10px;
 }
 #main-contacto .contacto form textarea {
@@ -200,7 +270,7 @@ footer ul li img {
   background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
   border: 0;
   border-radius: 8px;
-  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-shadow: #131210 0 15px 30px -5px;
   box-sizing: border-box;
   color: #ffffff;
   display: flex;
@@ -249,7 +319,7 @@ footer ul li img {
   }
   body header {
     background-position: center;
-    height: 40vh;
+    height: 50vh;
   }
   body header h1 {
     font-size: 80px;
@@ -260,7 +330,7 @@ footer ul li img {
   }
   body main p {
     padding: 20px;
-    font-size: 2rem;
+    font-size: 1.52rem;
   }
   body footer ul li {
     display: inline-block;
@@ -286,17 +356,14 @@ footer ul li img {
     width: 100%;
     height: auto;
   }
-  body #drones .dron-descripcion, #drones body .dron-descripcion .dron-descripcion {
-    flex-direction: row;
-  }
-  body #drones .dron-descripcion img, #drones body .dron-descripcion .dron-descripcion img {
-    width: 30%;
+  body #main-productos .contenedor p {
+    color: #131210;
   }
   body #drones .dron-descripcion .resaltar-titulo, #drones body .dron-descripcion .dron-descripcion .resaltar-titulo {
-    width: 10%;
+    text-align: center;
   }
   body #drones .dron-descripcion .descripcion, #drones body .dron-descripcion .dron-descripcion .descripcion {
-    width: 50%;
+    font-size: 1rem;
   }
 }
 /*import mq computadora escritorio*/
@@ -308,27 +375,35 @@ footer ul li img {
     padding: 30px;
     /**encabesado*/
     /*index*/
+    /**pagina drones*/
     /*pagina contacto*/
   }
   body header {
-    height: 50vh;
-    /*menu*/
+    height: 70vh;
+    background-position: top;
   }
   body header h1 {
     font-size: 120px;
   }
-  body header .navbar .navbar-item .nav-link {
-    font-size: 2rem;
-    text-align: center;
-    padding: 10px 30px;
-  }
-  body header .navbar .navbar-item .nav-link:hover {
-    background-color: rgba(169, 169, 169, 0.415);
-    font-weight: bolder;
-  }
   body #main-principal iframe {
     width: 680px;
     height: 470px;
+  }
+  body #drones .dron-descripcion, #drones body .dron-descripcion .dron-descripcion {
+    flex-direction: row;
+    color: #131210;
+  }
+  body #drones .dron-descripcion img, #drones body .dron-descripcion .dron-descripcion img {
+    width: 30%;
+    max-width: 400px;
+    margin: 0;
+  }
+  body #drones .dron-descripcion .resaltar-titulo, #drones body .dron-descripcion .dron-descripcion .resaltar-titulo {
+    width: 15%;
+  }
+  body #drones .dron-descripcion .descripcion, #drones body .dron-descripcion .dron-descripcion .descripcion {
+    width: 55%;
+    font-size: 1rem;
   }
   body #main-contacto {
     display: flex;

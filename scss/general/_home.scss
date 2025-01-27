@@ -5,13 +5,16 @@
 header{
     @include img-background(url(../imagenes/sembradora.jpg),cover,no-repeat);
     height: 30vh;
+    
     .icono{
         display: inline-block;
+        
     }
     .logo{
         @include img-background(url(../imagenes/logo-rural.avif),contain,no-repeat);
         @include size-w-h(80px,80px);
         border-radius: 50%;
+        @include sombra;
         &:hover{
             border: 1px solid $color-verde;
         }
@@ -25,32 +28,46 @@ header{
         text-transform: uppercase;
         background-color: $color-fondo-titulo;
         clear: both;
+        
+        
     }
+    nav:hover{
+        @include sombra;
+        border-radius: 2%;;
+    }
+
 }
 
 /*estilos main*/
 main{
-    background-color: $color-fondo-main;
+   // background-color: $color-verde-2;
+   background: rgb(93,185,150);
+    background: radial-gradient(circle, rgba(93,185,150,1) 0%, rgba(93,185,178,1) 100%);
     h2{
         text-align: center;
-        font-size: 2.5em;
-        padding-top: 20px;
+        font-size: 3rem;
+        padding: 20px;
         text-shadow: 3px 3px 5px $color-sombra;
+        color: $color-titulo;
     }
     .video-novedad{
+        @include sombra;
         iframe{
             @include size-w-h(90%, 25vh);
    
         }
+
     }
     p{
         padding: 2%;
-        text-justify: distribute; 
+        text-align: justify; 
+        color:$color-titulo;
     }
 }
 #main-principal{
     @include flex(column, center);
     text-align: center;
+    padding: 5%;
 }
 
 /*estilos footer*/
@@ -72,5 +89,12 @@ footer{
                 width: 30px;
             }
          }
+    }
+    .flecha-subir{
+        display: block;
+        position:fixed;
+        bottom: 10px;
+        right:10px;
+        width: 40px;
     }
 }
