@@ -1,0 +1,348 @@
+@charset "UTF-8";
+/*import reset*/
+/*paleta de colores*/
+/*inicializar*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+body header, body main, body footer {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*import home*/
+/*paleta de colores*/
+/*estilos de header*/
+header {
+  background-image: url(../imagenes/sembradora.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+}
+header .icono {
+  display: inline-block;
+}
+header .logo {
+  background-image: url(../imagenes/logo-rural.avif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+header .logo:hover {
+  border: 1px solid green;
+}
+header h1 {
+  text-align: center;
+  color: azure;
+  font-weight: bolder;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 60px;
+  text-transform: uppercase;
+  background-color: rgba(169, 169, 169, 0.415);
+  clear: both;
+}
+
+/*estilos main*/
+main {
+  background-color: rgb(208, 218, 208);
+}
+main h2 {
+  text-align: center;
+  font-size: 2.5em;
+  padding-top: 20px;
+  text-shadow: 3px 3px 5px grey;
+}
+main .video-novedad iframe {
+  width: 90%;
+  height: 25vh;
+}
+main p {
+  padding: 2%;
+  text-justify: distribute;
+}
+
+#main-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/*estilos footer*/
+footer {
+  background-color: rgb(22, 21, 21);
+}
+footer ul {
+  list-style: none;
+  width: 40%;
+  padding: 0;
+  margin: 0 auto;
+}
+footer ul li {
+  width: 20%;
+  padding: 10px 17px;
+}
+footer ul li a {
+  text-decoration: none;
+  color: azure;
+}
+footer ul li img {
+  width: 30px;
+}
+
+/*import pages*/
+/*paleta de colores*/
+/* estilos pagina nosotros*/
+#mision-vision section p {
+  padding: 10px 10%;
+  background-color: rgba(240, 255, 255, 0.408);
+}
+#mision-vision section .contenedor-carousel {
+  width: 70%;
+  margin: 5% auto;
+}
+#mision-vision section .contenedor-carousel img {
+  height: 200px;
+}
+#mision-vision section .contenedor-mision-imagenes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 5px;
+}
+#mision-vision section .contenedor-mision-imagenes img {
+  width: 300px;
+  display: block;
+}
+#mision-vision section .contenedor-mision-imagenes .ocultar-imagen {
+  display: none;
+}
+
+/**estilos página productos*/
+#main-productos .contenedor {
+  margin: 1%;
+}
+#main-productos .contenedor .producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
+  padding: 5px;
+  border-radius: 2%;
+  background-color: rgb(247, 250, 249);
+}
+#main-productos .contenedor .producto img {
+  width: 50%;
+  height: 150px;
+}
+
+/*estiloas pagina drones*/
+#drones, #drones .dron-descripcion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
+}
+#drones .dron-descripcion img {
+  width: 80%;
+  display: block;
+}
+#drones .dron-descripcion .resaltar-titulo {
+  width: 70%;
+  font-weight: bolder;
+  font-size: x-large;
+  padding-left: 2%;
+  vertical-align: middle;
+}
+#drones .dron-descripcion .resaltar-titulo span {
+  font-size: medium;
+  display: block;
+}
+#drones .dron-descripcion .descripcion {
+  width: 90%;
+  padding-left: 5%;
+}
+
+/*estilos pagina contacto*/
+#main-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#main-contacto .contacto {
+  margin-top: 0;
+}
+#main-contacto .contacto form {
+  margin: 0;
+  padding: 5%;
+  /* From Uiverse.io by cssbuttons-io */
+}
+#main-contacto .contacto form input {
+  display: block;
+  width: 40%;
+  margin-bottom: 10px;
+}
+#main-contacto .contacto form textarea {
+  width: 80%;
+}
+#main-contacto .contacto form button {
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#main-contacto .contacto form button:hover, #main-contacto .contacto form button:active {
+  outline: 0;
+}
+#main-contacto .contacto form button:hover span, #main-contacto .contacto form button:active span {
+  background: none;
+}
+#main-contacto .contacto form button:active {
+  transform: scale(0.9);
+}
+#main-contacto .contacto form button span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+/*import mq tablet*/
+/*paleta de colores*/
+/* estilos Media query para tabletas */
+@media (min-width: 600px) {
+  /*general*/
+  body {
+    font-size: 24px;
+    padding: 20px;
+    /*pagina nosotros*/
+    /*pagina drones*/
+  }
+  body header {
+    background-position: center;
+    height: 40vh;
+  }
+  body header h1 {
+    font-size: 80px;
+  }
+  body main .video-novedad iframe {
+    width: 600px;
+    height: 470px;
+  }
+  body main p {
+    padding: 20px;
+    font-size: 2rem;
+  }
+  body footer ul li {
+    display: inline-block;
+    margin-left: 40px;
+  }
+  body #vision-mision section .contenedor-carousel img {
+    height: 300px;
+  }
+  body #vision-mision section .comtenedor-mision-imagenes .ocultar-imagen {
+    display: block;
+  }
+  body #main-productos .contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: start;
+    justify-content: space-between;
+    align-content: space-evenly;
+  }
+  body #main-productos .contenedor img {
+    width: 100%;
+    height: auto;
+  }
+  body #drones .dron-descripcion, #drones body .dron-descripcion .dron-descripcion {
+    flex-direction: row;
+  }
+  body #drones .dron-descripcion img, #drones body .dron-descripcion .dron-descripcion img {
+    width: 30%;
+  }
+  body #drones .dron-descripcion .resaltar-titulo, #drones body .dron-descripcion .dron-descripcion .resaltar-titulo {
+    width: 10%;
+  }
+  body #drones .dron-descripcion .descripcion, #drones body .dron-descripcion .dron-descripcion .descripcion {
+    width: 50%;
+  }
+}
+/*import mq computadora escritorio*/
+/*paleta de colores*/
+/*estilos mq computadora de escritorio*/
+@media (min-width: 1024px) {
+  body {
+    font-size: 18px;
+    padding: 30px;
+    /**encabesado*/
+    /*index*/
+    /*pagina contacto*/
+  }
+  body header {
+    height: 50vh;
+    /*menu*/
+  }
+  body header h1 {
+    font-size: 120px;
+  }
+  body header .navbar .navbar-item .nav-link {
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px 30px;
+  }
+  body header .navbar .navbar-item .nav-link:hover {
+    background-color: rgba(169, 169, 169, 0.415);
+    font-weight: bolder;
+  }
+  body #main-principal iframe {
+    width: 680px;
+    height: 470px;
+  }
+  body #main-contacto {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: last baseline;
+  }
+  body #main-contacto .contacto {
+    flex-grow: 1;
+  }
+  body #main-contacto iframe {
+    width: 600px;
+    height: 300px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

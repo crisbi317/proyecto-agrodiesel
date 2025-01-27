@@ -1,0 +1,34 @@
+//mixin para flex
+@mixin flex($direction, $align){
+    display:flex;
+    flex-direction: $direction;
+    align-items:$align;
+}
+
+//mixin para imagenes de fondo
+@mixin img-background($img, $size, $repeat){
+    background-image: $img;
+    background-size: $size;
+    background-repeat: $repeat;
+}
+
+//mixin grid
+
+@mixin grid($col, $row, $gap){
+    display: grid;
+    grid-template-columns: $col;
+    grid-template-rows: $row;
+    gap:$gap;
+}
+
+// mixin nav
+
+@mixin nav($text, $back, $border){
+    color:$text;
+    background-color: $back;
+    border: 1px solid $border;
+}
+@mixin size-w-h($width, $heigth){
+    width: $width;
+    height: $heigth;
+}

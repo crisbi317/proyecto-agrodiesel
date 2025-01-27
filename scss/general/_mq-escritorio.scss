@@ -1,0 +1,53 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+/*estilos mq computadora de escritorio*/
+
+@media (min-width: 1024px){
+    body{
+        font-size: 18px;
+        padding: 30px;
+    
+        /**encabesado*/
+        header{
+            height: 50vh;
+            h1{
+                font-size: 120px;  
+            }
+            /*menu*/
+            .navbar{
+                .navbar-item{
+                    
+                    .nav-link{
+                        font-size: 2rem;                                                             
+                        text-align: center;
+                        padding: 10px 30px;
+                        &:hover{
+                            background-color:$color-fondo-titulo;
+                            font-weight: bolder;
+                        }
+                    }
+                }
+            }
+        }
+        /*index*/
+        #main-principal{
+            iframe{
+                @include size-w-h(680px, 470px);
+            }
+            
+        }
+        /*pagina contacto*/
+        #main-contacto{
+            @include flex(row,flex-start);
+            justify-content: last baseline;
+            
+            .contacto{
+                flex-grow: 1;
+            } 
+            iframe{
+                @include size-w-h(600px, 300px);
+            }   
+        }
+    }
+}
