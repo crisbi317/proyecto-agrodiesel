@@ -93,6 +93,7 @@ main p {
 /*estilos footer*/
 footer {
   background-color: #131210;
+  font-size: 1rem;
 }
 footer ul {
   list-style: none;
@@ -169,6 +170,7 @@ footer .flecha-subir {
   padding: 5px;
   border-radius: 2%;
   background-color: rgb(247, 250, 249);
+  margin-bottom: 5px;
   box-shadow: #131210 0 15px 30px -5px;
 }
 #main-productos .contenedor .producto img {
@@ -177,6 +179,7 @@ footer .flecha-subir {
 }
 #main-productos .contenedor .producto p {
   font-size: 1rem;
+  color: #131210;
 }
 #main-productos .contenedor .producto .producto-name {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -355,9 +358,6 @@ footer .flecha-subir {
   body #main-productos .contenedor img {
     width: 100%;
     height: auto;
-  }
-  body #main-productos .contenedor p {
-    color: #131210;
   }
   body #drones .dron-descripcion .resaltar-titulo, #drones body .dron-descripcion .dron-descripcion .resaltar-titulo {
     text-align: center;

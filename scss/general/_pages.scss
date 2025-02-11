@@ -49,12 +49,14 @@
             padding: 5px;
             border-radius: 2%;
             background-color: $color-prod;
+            margin-bottom: 5px;
             @include sombra;
             img{
                 @include size-w-h(90%, 150px);
             }
             p{
                 font-size: 1rem;
+                color:$color-principal;
             }
             .producto-name{
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
