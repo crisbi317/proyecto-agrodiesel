@@ -1,0 +1,84 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+/* estilos Media query para tabletas */
+
+@media (min-width: 600px){
+    /*general*/
+    body {
+        font-size: 24px;
+        padding: 20px;
+        header{
+            background-position: center;
+            height: 50vh;
+            h1{
+                font-size: 80px;
+            }
+           
+        }
+        main{
+
+            .video-novedad{
+                iframe{
+                       @include size-w-h(600px, 470px);
+                      }
+                }
+            p{
+                padding: 20px;
+                font-size:1.52rem;
+            }
+            }
+        
+        footer{
+            ul{
+                li{
+                     display: inline-block;
+                     margin-left: 40px;
+                }
+            }  
+        }
+        /*pagina nosotros*/
+        #vision-mision{
+            section{           
+                .contenedor-carousel{                    
+                    img{
+                        height: 300px; 
+                     }
+                 }   
+           
+                .comtenedor-mision-imagenes{
+                    .ocultar-imagen{
+                        display:block;
+                    }
+                }
+            }
+        }
+        #main-productos{
+            .contenedor{
+                @include grid(repeat(3, 1fr), repeat(3, 1fr), 20px);
+                justify-items: center;
+                align-items: start;
+                justify-content: space-between;
+                align-content: space-evenly;
+                img{
+                    @include size-w-h(100%,auto);
+                }
+              
+            }
+        }
+        /*pagina drones*/
+        #drones{
+            .dron-descripcion{
+              
+                .resaltar-titulo{
+                    text-align: center;
+                }
+                .descripcion{
+                   
+                    font-size: 1rem;
+                   
+                }
+             }
+        }
+    }
+}

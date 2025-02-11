@@ -1,0 +1,101 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+/*estilos de header*/
+header{
+    @include img-background(url(../imagenes/sembradora.jpg),cover,no-repeat);
+    height: 30vh;
+    
+    .icono{
+        display: inline-block;
+        
+    }
+    .logo{
+        @include img-background(url(../imagenes/logo-rural.avif),contain,no-repeat);
+        @include size-w-h(80px,80px);
+        border-radius: 50%;
+        @include sombra;
+        &:hover{
+            border: 1px solid $color-verde;
+        }
+    }
+    h1{
+        text-align: center;
+        color: $color-titulo;
+        font-weight: bolder;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 60px;
+        text-transform: uppercase;
+        background-color: $color-fondo-titulo;
+        clear: both;
+        
+        
+    }
+    nav:hover{
+        @include sombra;
+        border-radius: 2%;;
+    }
+
+}
+
+/*estilos main*/
+main{
+   // background-color: $color-verde-2;
+   background: rgb(93,185,150);
+    background: radial-gradient(circle, rgba(93,185,150,1) 0%, rgba(93,185,178,1) 100%);
+    h2{
+        text-align: center;
+        font-size: 3rem;
+        padding: 20px;
+        text-shadow: 3px 3px 5px $color-sombra;
+        color: $color-titulo;
+    }
+    .video-novedad{
+        @include sombra;
+        iframe{
+            @include size-w-h(90%, 25vh);
+   
+        }
+
+    }
+    p{
+        padding: 2%;
+        text-align: justify; 
+        color:$color-titulo;
+    }
+}
+#main-principal{
+    @include flex(column, center);
+    text-align: center;
+    padding: 5%;
+}
+
+/*estilos footer*/
+footer{
+    background-color: $color-principal;
+    font-size: 1rem;
+    ul{
+        list-style: none;
+        width: 40%;
+        padding: 0;
+        margin:0 auto;
+         li{
+            width: 20%;
+            padding: 10px 17px;
+            a{
+                text-decoration: none;
+                color: $color-titulo; 
+            }
+            img{
+                width: 30px;
+            }
+         }
+    }
+    .flecha-subir{
+        display: block;
+        position:fixed;
+        bottom: 10px;
+        right:10px;
+        width: 40px;
+    }
+}

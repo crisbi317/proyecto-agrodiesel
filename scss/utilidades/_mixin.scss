@@ -1,0 +1,48 @@
+//mixin para flex
+@mixin flex($direction, $align){
+    display:flex;
+    flex-direction: $direction;
+    align-items:$align;
+}
+
+//mixin para imagenes de fondo
+@mixin img-background($img, $size, $repeat){
+    background-image: $img;
+    background-size: $size;
+    background-repeat: $repeat;
+}
+
+//mixin grid
+
+@mixin grid($col, $row, $gap){
+    display: grid;
+    grid-template-columns: $col;
+    grid-template-rows: $row;
+    gap:$gap;
+}
+
+// mixin nav
+
+@mixin nav($text, $back, $border){
+    color:$text;
+    background-color: $back;
+    border: 1px solid $border;
+}
+@mixin size-w-h($width, $heigth){
+    width: $width;
+    height: $heigth;
+}
+@mixin form-color{
+    border-color:#5b42f3 ;       
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    background-color: rgb(5, 6, 45);
+}
+
+@mixin sombra{
+    box-shadow:#131210 0 15px 30px -5px;
+}
+
+@mixin resalto-producto{
+    box-shadow:#7a6843 0 15px 30px -5px;
+    border: $color-titulo;
+}

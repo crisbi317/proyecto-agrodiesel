@@ -1,0 +1,60 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+/*estilos mq computadora de escritorio*/
+
+@media (min-width: 1024px){
+    body{
+        font-size: 18px;
+        padding: 30px;
+    
+        /**encabesado*/
+        header{
+            height: 70vh;
+            background-position:top;
+            h1{
+                font-size: 120px;  
+            }
+       }
+        /*index*/
+        #main-principal{
+            iframe{
+                @include size-w-h(680px, 470px);
+            }
+            
+        }
+
+        /**pagina drones*/
+        #drones{
+            .dron-descripcion{
+                flex-direction: row;
+                color:$color-principal;
+                img{
+                    width: 30%; 
+                    max-width: 400px;
+                    margin:0;
+                }
+                .resaltar-titulo{
+                    width: 15%;
+                }
+                .descripcion{
+                    width: 55%;
+                    font-size: 1rem;
+                   
+                }
+             }
+        }
+        /*pagina contacto*/
+        #main-contacto{
+            @include flex(row,flex-start);
+            justify-content: last baseline;
+            
+            .contacto{
+                flex-grow: 1;
+            } 
+            iframe{
+                @include size-w-h(600px, 300px);
+            }   
+        }
+    }
+}

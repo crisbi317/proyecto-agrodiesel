@@ -1,301 +1,423 @@
+@charset "UTF-8";
+/*import reset*/
+/*paleta de colores*/
 /*inicializar*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-header, main, footer{
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
+
+body {
+  background-color: #FBF6E9;
 }
-/*encabezado*/
-header{
-    background-image: url(../imagenes/sembradora.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 30vh;
-    
+body header, body main, body footer {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: #131210 0 15px 30px -5px;
 }
-.icono{
+
+/*import home*/
+/*paleta de colores*/
+/*estilos de header*/
+header {
+  background-image: url(../imagenes/sembradora.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+}
+header .icono {
+  display: inline-block;
+}
+header .logo {
+  background-image: url(../imagenes/logo-rural.avif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: #131210 0 15px 30px -5px;
+}
+header .logo:hover {
+  border: 1px solid #118B50;
+}
+header h1 {
+  text-align: center;
+  color: #FBF6E9;
+  font-weight: bolder;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 60px;
+  text-transform: uppercase;
+  background-color: rgba(169, 169, 169, 0.415);
+  clear: both;
+}
+header nav:hover {
+  box-shadow: #131210 0 15px 30px -5px;
+  border-radius: 2%;
+}
+
+/*estilos main*/
+main {
+  background: rgb(93, 185, 150);
+  background: radial-gradient(circle, rgb(93, 185, 150) 0%, rgb(93, 185, 178) 100%);
+}
+main h2 {
+  text-align: center;
+  font-size: 3rem;
+  padding: 20px;
+  text-shadow: 3px 3px 5px grey;
+  color: #FBF6E9;
+}
+main .video-novedad {
+  box-shadow: #131210 0 15px 30px -5px;
+}
+main .video-novedad iframe {
+  width: 90%;
+  height: 25vh;
+}
+main p {
+  padding: 2%;
+  text-align: justify;
+  color: #FBF6E9;
+}
+
+#main-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5%;
+}
+
+/*estilos footer*/
+footer {
+  background-color: #131210;
+  font-size: 1rem;
+}
+footer ul {
+  list-style: none;
+  width: 40%;
+  padding: 0;
+  margin: 0 auto;
+}
+footer ul li {
+  width: 20%;
+  padding: 10px 17px;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #FBF6E9;
+}
+footer ul li img {
+  width: 30px;
+}
+footer .flecha-subir {
+  display: block;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 40px;
+}
+
+/*import pages*/
+/*paleta de colores*/
+/* estilos pagina nosotros*/
+#mision-vision section {
+  background-color: #118B50;
+  padding: 3%;
+}
+#mision-vision section p {
+  padding: 10px 10%;
+  color: #FBF6E9;
+}
+#mision-vision section .contenedor-carousel {
+  width: 70%;
+  margin: 5% auto;
+  box-shadow: #131210 0 15px 30px -5px;
+}
+#mision-vision section .contenedor-carousel img {
+  height: 40vh;
+}
+#mision-vision section .contenedor-mision-imagenes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 5px;
+}
+#mision-vision section .contenedor-mision-imagenes img {
+  width: 300px;
+  display: block;
+  box-shadow: #131210 0 15px 30px -5px;
+}
+#mision-vision section .contenedor-mision-imagenes .ocultar-imagen {
+  display: none;
+}
+#mision-vision .mision {
+  background-color: #5DB996;
+}
+
+/**estilos página productos*/
+#main-productos .contenedor {
+  padding: 3%;
+}
+#main-productos .contenedor .producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
+  padding: 5px;
+  border-radius: 2%;
+  background-color: rgb(247, 250, 249);
+  margin-bottom: 5px;
+  box-shadow: #131210 0 15px 30px -5px;
+}
+#main-productos .contenedor .producto img {
+  width: 90%;
+  height: 150px;
+}
+#main-productos .contenedor .producto p {
+  font-size: 1rem;
+  color: #131210;
+}
+#main-productos .contenedor .producto .producto-name {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+#main-productos .contenedor .producto:hover {
+  box-shadow: #7a6843 0 15px 30px -5px;
+  border: #FBF6E9;
+}
+
+/*estiloas pagina drones*/
+#drones, #drones .dron-descripcion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
+}
+#drones .dron-descripcion {
+  background-color: rgb(247, 250, 249);
+  box-shadow: #131210 0 15px 30px -5px;
+  margin: 2%;
+  border-radius: 2%;
+}
+#drones .dron-descripcion img {
+  width: 80%;
+  display: block;
+  margin-top: 2%;
+}
+#drones .dron-descripcion .resaltar-titulo {
+  width: 70%;
+  font-weight: bolder;
+  font-size: x-large;
+  padding-left: 2%;
+  vertical-align: middle;
+  color: #131210;
+}
+#drones .dron-descripcion .resaltar-titulo span {
+  font-size: medium;
+  display: block;
+}
+#drones .dron-descripcion .descripcion {
+  width: 90%;
+  padding-left: 5%;
+  color: #131210;
+}
+#drones .dron-descripcion:hover {
+  box-shadow: #7a6843 0 15px 30px -5px;
+  border: #FBF6E9;
+}
+
+/*estilos pagina contacto*/
+#main-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+#main-contacto h2 {
+  color: #118B50;
+}
+#main-contacto .contacto {
+  width: 90%;
+  margin: 5%;
+  padding: 3%;
+  background-color: rgb(247, 250, 249);
+  border-radius: 2%;
+  box-shadow: #131210 0 15px 30px -5px;
+}
+#main-contacto .contacto form {
+  margin: 0;
+  padding: 30px;
+  /* From Uiverse.io by cssbuttons-io */
+}
+#main-contacto .contacto form input, #main-contacto .contacto form textarea {
+  border-color: #5b42f3;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  background-color: rgb(5, 6, 45);
+}
+#main-contacto .contacto form input {
+  display: block;
+  width: 80%;
+  margin-bottom: 10px;
+}
+#main-contacto .contacto form textarea {
+  width: 80%;
+}
+#main-contacto .contacto form button {
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: #131210 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#main-contacto .contacto form button:hover, #main-contacto .contacto form button:active {
+  outline: 0;
+}
+#main-contacto .contacto form button:hover span, #main-contacto .contacto form button:active span {
+  background: none;
+}
+#main-contacto .contacto form button:active {
+  transform: scale(0.9);
+}
+#main-contacto .contacto form button span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+/*import mq tablet*/
+/*paleta de colores*/
+/* estilos Media query para tabletas */
+@media (min-width: 600px) {
+  /*general*/
+  body {
+    font-size: 24px;
+    padding: 20px;
+    /*pagina nosotros*/
+    /*pagina drones*/
+  }
+  body header {
+    background-position: center;
+    height: 50vh;
+  }
+  body header h1 {
+    font-size: 80px;
+  }
+  body main .video-novedad iframe {
+    width: 600px;
+    height: 470px;
+  }
+  body main p {
+    padding: 20px;
+    font-size: 1.52rem;
+  }
+  body footer ul li {
     display: inline-block;
-}
-.logo{
-    background-image: url(../imagenes/logo-rural.avif);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-
-.logo img:hover{
-   border: 1px solid green;
-}
-header h1{
-    
-    text-align: center;
-    color: azure;
-    font-weight: bolder;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 60px;
-    text-transform: uppercase;
-    background-color: rgba(169, 169, 169, 0.415);
-    clear: both;
-    
-}
-/*menu*/ 
-
-
-/*main*/
-main{background-color: rgb(208, 218, 208);}
-#main-principal{
-    background-color: rgb(208, 218, 208);
-    padding: 2% 5%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-main h2{
-    text-align: center;
-    font-size: 2.5em;
-    padding-top: 20px;
-    text-shadow: 3px 3px 5px grey;
-} 
-
-.video-novedad iframe{
-    width: 90%;
-    height: 25vh;
-    
-}
-/*pie de pagina*/
-footer{
-    background-color: black;
-   
-
-}
-footer ul{
-    list-style: none;
-    width: 40%;
-    padding: 0;
-    margin:0 auto;
-}
-footer ul li{
-   
-    width: 20%;
-  padding: 10px 17px;  
-}
-footer ul li a{
-    text-decoration: none;
-    color: azure;
-    
-}
-footer ul li img{
-    width: 30px;
-}
- /*pagina nosotros*/
- .contenedor-carousel{
-    width: 70%;
-    margin: 5% auto;
- }
- .contenedor-carousel img{
-    height: 200px;
- }
- #mision-vision section p{
-    padding: 10px 10%;
-    background-color: rgba(240, 255, 255, 0.408);
- }
- .contenedor-mision-imagenes{
-    display:flex;
-    justify-content: space-around;
-    padding-bottom: 5px;
- }
- .contenedor-mision-imagenes img{
-    width: 300px;
-    display:block;
- }
- .contenedor-mision-imagenes .ocultar-imagen{
-    display:none;
- }
- /*pagina productos*/
-#main-productos .contenedor{
-    display:grid;
+    margin-left: 40px;
+  }
+  body #vision-mision section .contenedor-carousel img {
+    height: 300px;
+  }
+  body #vision-mision section .comtenedor-mision-imagenes .ocultar-imagen {
+    display: block;
+  }
+  body #main-productos .contenedor {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
     justify-items: center;
     align-items: start;
     justify-content: space-between;
     align-content: space-evenly;
-    gap:20px;
-    margin: 1%;
+  }
+  body #main-productos .contenedor img {
+    width: 100%;
+    height: auto;
+  }
+  body #drones .dron-descripcion .resaltar-titulo, #drones body .dron-descripcion .dron-descripcion .resaltar-titulo {
+    text-align: center;
+  }
+  body #drones .dron-descripcion .descripcion, #drones body .dron-descripcion .dron-descripcion .descripcion {
+    font-size: 1rem;
+  }
 }
-
- .contenedor .producto{
-     display:flex;
-     flex-direction: column; 
-    background-color: rgb(247, 250, 249);
-    align-items: center;   
-    align-content: space-around;
-    padding: 5px;
-    border-radius: 2%;
- }
- .producto img{
-    width: 50%;
-    height: 150px;
- }
- /*pagina drones*/
- #drones{
-    display: flex;
-    flex-direction: column; 
-    align-items: center;   
-    align-content: space-around;
- }
- .dron-descripcion{
-    width: 80%;
-    background-color: rgb(247, 250, 249);
-    margin: 2% auto;
-    padding: 2%;
-    display: flex;
-    flex-direction: column; 
-    align-items: center;   
-    align-content: space-around;
-    border-radius: 2%;
- }
- .dron-descripcion img{
-    width: 80%;
-    display: block;
- }
- .dron-descripcion .resaltar-titulo{
-    width: 70%;
-    font-weight: bolder;
-    font-size: x-large;
-    padding-left: 2%;
-    vertical-align: middle;
- }
- .dron-descripcion .resaltar-titulo span{
-    font-size: medium;
-    display:block;
- }
- .dron-descripcion .descripcion{
-    width: 90%;
-    
-    padding-left: 5%;
- }
- /*pagina contacto*/
- #main-contacto{
-    display: flex;
-    flex-direction: column;
- }
- .contacto{
-   
-    margin-top: 0;
- }
-.contacto form{
-    margin: 0;
-    padding: 5%;
-}
- input{
-    display: block;
-    width: 40%;
-    margin-bottom: 10px;
- }
- textarea{
-    width: 80%;
- }
-/*
-@media 
-    
-}*/
-/* Media query para tabletas */
-@media (min-width: 600px) {
-    body {
-        font-size: 18px;
-        padding: 20px;
-    }
-    header{
-        background-position: center;
-        height: 40vh;
-    }
-    header h1{
-        font-size: 80px;
-    }
-    .video-novedad iframe{
-               height: 40vh;
-            }
-    footer ul li{
-        display: inline-block;
-        margin-left: 40px;
-    }
-    .contenedor-carousel img{
-        height: 400px;
-     }
-     .contenedor-mision-imagenes .ocultar-imagen{
-        display:block;
-     }
-      .dron-descripcion{
-       flex-direction: column; 
-    }
-    .dron-descripcion{
-        flex-direction: row; 
-        align-items: center;   
-        align-content: space-around;
-     }
-     .dron-descripcion img{
-       width: 30%;
-     }
-     .dron-descripcion .resaltar-titulo{
-        width: 10%;
-     }
-
-     .dron-descripcion .descripcion{
-        width: 50%;
-     }
-}
-
-/* Media query para computadoras de escritorio */
+/*import mq computadora escritorio*/
+/*paleta de colores*/
+/*estilos mq computadora de escritorio*/
 @media (min-width: 1024px) {
-    body {
-        font-size: 20px;
-        padding: 30px;
-    }
-    header{
-       height: 50vh;
-    }
-    header h1{
-        font-size: 120px;
-
-    }
-    .video-novedad iframe{
-        height: 60vh;
-     }
-     /*menu*/
-     .navbar{
-        width:70%;
-    }
-    .navbar .nav-item{
-        width: 100%;
-    }
-    .navbar .nav-item .nav-link{
-   
-        color: azure;
-        background-color: rgb(25, 71, 25);
-        text-align: center;
-        padding: 10px 25px;
-    }
-    .navbar .nav-item .nav-link:hover{
-        color: rgb(32, 37, 37);
-        background-color: rgb(91, 172, 91);
-        border: 1px solid rgb(62, 127, 62);
-    }
-    #main-contacto{
-        flex-direction: row;
-        justify-content: last baseline;
-        align-items:flex-start;
-    }
-    #main-contacto .contacto{
-        flex-grow: 1;
-    }
-    #main-contacto iframe{
-        width: 600px;
-    }
+  body {
+    font-size: 18px;
+    padding: 30px;
+    /**encabesado*/
+    /*index*/
+    /**pagina drones*/
+    /*pagina contacto*/
+  }
+  body header {
+    height: 70vh;
+    background-position: top;
+  }
+  body header h1 {
+    font-size: 120px;
+  }
+  body #main-principal iframe {
+    width: 680px;
+    height: 470px;
+  }
+  body #drones .dron-descripcion, #drones body .dron-descripcion .dron-descripcion {
+    flex-direction: row;
+    color: #131210;
+  }
+  body #drones .dron-descripcion img, #drones body .dron-descripcion .dron-descripcion img {
+    width: 30%;
+    max-width: 400px;
+    margin: 0;
+  }
+  body #drones .dron-descripcion .resaltar-titulo, #drones body .dron-descripcion .dron-descripcion .resaltar-titulo {
+    width: 15%;
+  }
+  body #drones .dron-descripcion .descripcion, #drones body .dron-descripcion .dron-descripcion .descripcion {
+    width: 55%;
+    font-size: 1rem;
+  }
+  body #main-contacto {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: last baseline;
+  }
+  body #main-contacto .contacto {
+    flex-grow: 1;
+  }
+  body #main-contacto iframe {
+    width: 600px;
+    height: 300px;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */

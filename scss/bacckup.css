@@ -1,0 +1,62 @@
+
+
+
+
+
+
+
+/*
+@media 
+    
+}*/
+/* Media query para tabletas */
+
+
+/* Media query para computadoras de escritorio */
+
+
+    body {
+        font-size: 20px;
+        padding: 30px;
+    }
+    header{
+       height: 50vh;
+    }
+    header h1{
+        font-size: 120px;
+
+    }
+    .video-novedad iframe{
+        height: 60vh;
+     }
+     /*menu*/
+     .navbar{
+        width:70%;
+    }
+    .navbar .nav-item{
+        width: 100%;
+    }
+    .navbar .nav-item .nav-link{
+   
+        color: azure;
+        background-color: rgb(25, 71, 25);
+        text-align: center;
+        padding: 10px 25px;
+    }
+    .navbar .nav-item .nav-link:hover{
+        color: rgb(32, 37, 37);
+        background-color: rgb(91, 172, 91);
+        border: 1px solid rgb(62, 127, 62);
+    }
+    #main-contacto{
+        flex-direction: row;
+        justify-content: last baseline;
+        align-items:flex-start;
+    }
+    #main-contacto .contacto{
+        flex-grow: 1;
+    }
+    #main-contacto iframe{
+        width: 600px;
+    }
+}sass
